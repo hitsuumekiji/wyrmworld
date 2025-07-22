@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #272727;
+    background-image: url(../Images/back2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: #e5e5e5; 
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+a:link {
+  font-size: larger;
+  color: #ffffff;
+}
+
+a:visited {
+  color: #e7e7e7;
+}
+
+
+
+a:hover {
+  color: #ffca29;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+header {
+    background-color: #ffca29;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: #000000 0px 0px 10px; /* тень для эффекта */
+    z-index: 1000; 
+}
+
+main .main_text {
+  text-align: center;
+}
+h1 {
+    font-size: 4em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #000000;
+    text-align: left;
+    padding-left: 100px;
+    margin: 0;
+}
+
+
+
+main {
+    margin-top: 20vh; /* Adjust based on header height */
+    padding: 10px 20px 10px 14vh; /* Adjust padding to create space for the aside */
+    padding-left: 30 vh;
+}
+
+  .menu_button {
+    position: fixed;
+    top: 30px;
+    left: 18px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 100%;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 1001;
+    transition: transform 0.3s ease;
+    background-image: url(../Images/logo.png);
+    background-size: cover;
+    transform-origin: center center;
+  }
+  
+
+aside {
+    position: fixed;      /* чтобы поле было фиксировано */
+    top: 0;
+    left: -175px;         /* сдвинем влево за экран (ширина 250px) */
+    width: 250px;
+    height: 100vh;        /* высота на весь экран */
+    background: #333;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: left 0.3s ease; /* плавный переход */
+    cursor: pointer;
+    text-align: left;
+    padding-right: 15px;
+    padding-top: 80px;
+    padding-left: 20px;
+    box-shadow: #000000 0px 0px 10px; /* тень для эффекта */
+    z-index: 1000;        /* чтобы было поверх других элементов */
+    text-transform: uppercase;
+  }
+
+  aside:hover {
+    left: 0;              /* при наведении выезжаем на экран */
+  }
+
+aside h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-align: left;
+    margin-bottom: 5px;
+
+}
+aside:hover {
+    height: 100%;
+    color: #ffca29;
+}
+
+aside:hover .menu_button {
+  transform: rotate(180deg);
+}
+
+.main_text {
+    font-size: 1em;
+    line-height: 1.4;
+    color: #cdcdcd;
+    margin: 20px 0;
+    text-align: justify;
+}
+
+#image1 {
+    background-image: url(https://i.pinimg.com/1200x/12/03/50/120350c46a034b63310fb42282af7164.jpg);
+    height: 100px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+#image2 {
+    height: 2000px;
+}
+
+#left_descriptor {
+    text-align: center;
+    right: 30px;
+}
+
+
+  .hero_image {
+    max-width: 100%;
+    justify-self: center;
+    height: auto;
+    display: block;
+    border: #000000 5px solid;
+  }
+
+.hero_container1 {
+    margin-top: 2%;
+    margin-top: 1%;
+    display: flex; /* размещает все вложенные div в ряд */
+    flex-wrap: wrap; /* позволяет переносить элементы на новую строку */
+    justify-content: center; /* выравнивание по центру */
+    gap: 10px; /* расстояние между элементами */
+    row-gap: 20px; /* расстояние между строками */
+    
+}
+
+.hero_container2 {
+    margin-top: 2%;
+    display: flex; /* размещает все вложенные div в ряд */
+    flex-wrap: wrap; /* позволяет переносить элементы на новую строку */
+    justify-content: center; /* выравнивание по центру */
+    gap: 10px; /* расстояние между элементами */
+}
+
+.hero {
+    color: #000000;
+    background: #ffca29;
+    text-align: left;
+    height: 50vh;
+    width: 40vh;
+    margin-left: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: end;
+}
+
+.hero:hover {
+    background: #fdd04b;
+    color: #000000;
+    box-shadow: #000000 0px 0px 10px; /* тень для эффекта */
+}
+
+main .main_title {
+  text-align: center;
+}
+
+footer a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  color: #000000;
+  font-size: 2em;
+}
+
+footer a:link {
+  font-size: larger;
+  color: #000000;
+}
+
+footer a:visited {
+  color: #484848;
+}
+
+
+
+footer a:hover {
+  color: #383838;
+}
+
+footer {
+    background-color: #ffca29;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
